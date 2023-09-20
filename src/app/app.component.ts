@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'art-com';
+  artistName = 'Spinning_Axes'
 }

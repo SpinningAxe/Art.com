@@ -1,0 +1,16 @@
+$shade1: #D9D3BB;
+$shade2: #C6C1AB;
+$shade3: #B3AE9A;
+$shade4: #4D4A41;
+
+#container{
+    width: 100vw;
+    height: max-content;
+
+    padding: 1rem;
+    // border: 2px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

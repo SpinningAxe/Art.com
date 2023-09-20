@@ -1,0 +1,62 @@
+$shade1: #D9D3BB;
+$shade2: #C6C1AB;
+$shade3: #B3AE9A;
+$shade4: #4D4A41;
+
+#container{
+    height: 5rem;
+    width: max-content;
+    // border: 1px solid red;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.standardStyle{
+    padding: 1rem;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.buttonContainer{
+    height: 3rem;
+
+    display: flex;
+    list-style-type: square;
+
+    align-items:center;
+    justify-content: center;
+
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+    font-weight: bold;
+    color: $shade4;
+}
+
+.navButton{
+    width: 15rem;
+    height: 2.5rem;
+    background-color: $shade3;
+}
+
+.navButton:hover{
+    height: 3rem;
+    color: $shade1;
+    background-color: $shade4;
+    border-top: 0.5rem double $shade2;
+    border-bottom: 0.5rem double $shade2;
+    cursor: pointer;
+}
+
+.navButton.chosen{
+    height: 3rem;
+    color: $shade1;
+    background-color: $shade4;
+    border-top: 0.5rem double $shade2;
+    border-bottom: 0.5rem double $shade2;
+}

@@ -1,0 +1,7 @@
+  <div id="container">
+    <div  id="yearNavbar">
+      <ul class="center">
+        <li class="center button" *ngFor="let year of yearList" id="{{ year }}" (click)="chooseYear(year)">{{ year }}</li>
+      </ul>
+    </div>
+  </div>
