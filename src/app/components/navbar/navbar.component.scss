@@ -16,12 +16,11 @@ $shade4: #4D4A41;
 }
 
 .standardStyle{
-    padding: 1rem;
     margin: 5px;
     box-sizing: border-box;
 }
 
-.buttonContainer{
+ul{
     height: 3rem;
 
     display: flex;
@@ -38,13 +37,13 @@ $shade4: #4D4A41;
     color: $shade4;
 }
 
-.navButton{
+li{
     width: 15rem;
     height: 2.5rem;
     background-color: $shade3;
 }
 
-.navButton:hover{
+li:hover{
     height: 3rem;
     color: $shade1;
     background-color: $shade4;
@@ -53,8 +52,25 @@ $shade4: #4D4A41;
     cursor: pointer;
 }
 
-.navButton.chosen{
+.chosen{
     height: 3rem;
+
+    display: flex;
+    list-style-type: square;
+
+    align-items:center;
+    justify-content: center;
+
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+    width: 15rem;
+    background-color: $shade3;
+    font-weight: bold;
+    color: $shade4;
+
+
     color: $shade1;
     background-color: $shade4;
     border-top: 0.5rem double $shade2;
