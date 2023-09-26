@@ -41,6 +41,7 @@ li{
     width: 15rem;
     height: 2.5rem;
     background-color: $shade3;
+    transition: height 0.1s ease-out;
 }
 
 li:hover{
@@ -50,6 +51,7 @@ li:hover{
     border-top: 0.5rem double $shade2;
     border-bottom: 0.5rem double $shade2;
     cursor: pointer;
+    
 }
 
 .chosen{

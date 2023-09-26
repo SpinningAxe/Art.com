@@ -1,8 +1,105 @@
-<div id="container">
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
 
-    <div id="title"> <p>8.{{chosenYear}}</p> </div>
-    <div id="cardContainer">
-        <div *ngFor="let card of cardList" class="card"></div>
+<div id="container">
+  <div id="title">
+    <p>8.{{ chosenYear }}</p>
+  </div>
+  <div id="cardContainer">
+    <div
+      *ngFor="let card of cardList"
+      class="card center"
+      (click)="openModal(card)"
+    >
+      <img src="{{ card.img }}" class="img" />
+      <div class="title">{{ card.name }}</div>
+    </div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modalButton center" (click)="backModal(currentCard)">
+    <svg
+      width="32"
+      height="57"
+      viewBox="0 0 32 57"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="28.3389"
+        y="56.9082"
+        width="40.0729"
+        height="4"
+        transform="rotate(-135 28.3389 56.9082)"
+        fill="#D9D9D9"
+      />
+      <rect
+        y="28.5685"
+        width="40.009"
+        height="4"
+        transform="rotate(-45 0 28.5685)"
+        fill="#D9D9D9"
+      />
+    </svg>
+  </div>
+  <div class="modal-content">
+    <div class="img"></div>
+    <!-- <img src="{{ currentCard.img }}" class="img" /> -->
+    <span class="title">{{ currentCard.name }}</span>
+  </div>
+  <div class="modalButton center" (click)="nextModal(currentCard)">
+    <div class="close center" (click)="xCloseModal()">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="2.82837"
+          width="40.0729"
+          height="4"
+          transform="rotate(45 2.82837 0)"
+          fill="#D9D9D9"
+        />
+        <rect
+          x="31.1191"
+          y="2.82843"
+          width="40.009"
+          height="4"
+          transform="rotate(135 31.1191 2.82843)"
+          fill="#D9D9D9"
+        />
+      </svg>
     </div>
 
+    <svg
+      width="32"
+      height="57"
+      viewBox="0 0 32 57"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="2.82837"
+        width="40.0729"
+        height="4"
+        transform="rotate(45 2.82837 0)"
+        fill="#D9D9D9"
+      />
+      <rect
+        x="31.1672"
+        y="28.3397"
+        width="40.009"
+        height="4"
+        transform="rotate(135 31.1672 28.3397)"
+        fill="#D9D9D9"
+      />
+    </svg>
+  </div>
 </div>
